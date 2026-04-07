@@ -76,18 +76,18 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'serialize-and-deserialize-binary-tree', name: 'Serialize and Deserialize Binary Tree', number: 297, difficulty: 'Hard', topicId: 'trees', link: 'https://leetcode.com/problems/serialize-and-deserialize-binary-tree/', hasVisualization: true },
 
   // Tries (3)
-  { id: 'implement-trie', name: 'Implement Trie (Prefix Tree)', number: 208, difficulty: 'Medium', topicId: 'tries', link: 'https://leetcode.com/problems/implement-trie-prefix-tree/', hasVisualization: false },
-  { id: 'design-add-and-search-words', name: 'Design Add and Search Words Data Structure', number: 211, difficulty: 'Medium', topicId: 'tries', link: 'https://leetcode.com/problems/design-add-and-search-words-data-structure/', hasVisualization: false },
-  { id: 'word-search-ii', name: 'Word Search II', number: 212, difficulty: 'Hard', topicId: 'tries', link: 'https://leetcode.com/problems/word-search-ii/', hasVisualization: false },
+  { id: 'implement-trie', name: 'Implement Trie (Prefix Tree)', number: 208, difficulty: 'Medium', topicId: 'tries', link: 'https://leetcode.com/problems/implement-trie-prefix-tree/', hasVisualization: true },
+  { id: 'design-add-and-search-words', name: 'Design Add and Search Words Data Structure', number: 211, difficulty: 'Medium', topicId: 'tries', link: 'https://leetcode.com/problems/design-add-and-search-words-data-structure/', hasVisualization: true },
+  { id: 'word-search-ii', name: 'Word Search II', number: 212, difficulty: 'Hard', topicId: 'tries', link: 'https://leetcode.com/problems/word-search-ii/', hasVisualization: true },
 
   // Heap / Priority Queue (7)
-  { id: 'kth-largest-element-in-stream', name: 'Kth Largest Element in a Stream', number: 703, difficulty: 'Easy', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/kth-largest-element-in-a-stream/', hasVisualization: false },
-  { id: 'last-stone-weight', name: 'Last Stone Weight', number: 1046, difficulty: 'Easy', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/last-stone-weight/', hasVisualization: false },
-  { id: 'k-closest-points-to-origin', name: 'K Closest Points to Origin', number: 973, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/k-closest-points-to-origin/', hasVisualization: false },
-  { id: 'kth-largest-element-in-array', name: 'Kth Largest Element in an Array', number: 215, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/kth-largest-element-in-an-array/', hasVisualization: false },
-  { id: 'task-scheduler', name: 'Task Scheduler', number: 621, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/task-scheduler/', hasVisualization: false },
-  { id: 'design-twitter', name: 'Design Twitter', number: 355, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/design-twitter/', hasVisualization: false },
-  { id: 'find-median-from-data-stream', name: 'Find Median from Data Stream', number: 295, difficulty: 'Hard', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/find-median-from-data-stream/', hasVisualization: false },
+  { id: 'kth-largest-element-in-stream', name: 'Kth Largest Element in a Stream', number: 703, difficulty: 'Easy', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/kth-largest-element-in-a-stream/', hasVisualization: true },
+  { id: 'last-stone-weight', name: 'Last Stone Weight', number: 1046, difficulty: 'Easy', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/last-stone-weight/', hasVisualization: true },
+  { id: 'k-closest-points-to-origin', name: 'K Closest Points to Origin', number: 973, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/k-closest-points-to-origin/', hasVisualization: true },
+  { id: 'kth-largest-element-in-array', name: 'Kth Largest Element in an Array', number: 215, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/kth-largest-element-in-an-array/', hasVisualization: true },
+  { id: 'task-scheduler', name: 'Task Scheduler', number: 621, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/task-scheduler/', hasVisualization: true },
+  { id: 'design-twitter', name: 'Design Twitter', number: 355, difficulty: 'Medium', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/design-twitter/', hasVisualization: true },
+  { id: 'find-median-from-data-stream', name: 'Find Median from Data Stream', number: 295, difficulty: 'Hard', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/find-median-from-data-stream/', hasVisualization: true },
 
   // Backtracking (9)
   { id: 'subsets', name: 'Subsets', number: 78, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/subsets/', hasVisualization: false },
