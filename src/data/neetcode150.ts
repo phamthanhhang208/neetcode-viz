@@ -38,12 +38,12 @@ export const NEETCODE_150: NeetCodeProblem[] = [
 
   // Binary Search (7)
   { id: 'binary-search', name: 'Binary Search', number: 704, difficulty: 'Easy', topicId: 'binary-search', link: 'https://leetcode.com/problems/binary-search/', hasVisualization: true },
-  { id: 'search-a-2d-matrix', name: 'Search a 2D Matrix', number: 74, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/search-a-2d-matrix/', hasVisualization: false },
-  { id: 'koko-eating-bananas', name: 'Koko Eating Bananas', number: 875, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/koko-eating-bananas/', hasVisualization: false },
-  { id: 'find-minimum-in-rotated-sorted-array', name: 'Find Minimum in Rotated Sorted Array', number: 153, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/', hasVisualization: false },
-  { id: 'search-in-rotated-sorted-array', name: 'Search in Rotated Sorted Array', number: 33, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/search-in-rotated-sorted-array/', hasVisualization: false },
-  { id: 'time-based-key-value-store', name: 'Time Based Key-Value Store', number: 981, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/time-based-key-value-store/', hasVisualization: false },
-  { id: 'median-of-two-sorted-arrays', name: 'Median of Two Sorted Arrays', number: 4, difficulty: 'Hard', topicId: 'binary-search', link: 'https://leetcode.com/problems/median-of-two-sorted-arrays/', hasVisualization: false },
+  { id: 'search-a-2d-matrix', name: 'Search a 2D Matrix', number: 74, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/search-a-2d-matrix/', hasVisualization: true },
+  { id: 'koko-eating-bananas', name: 'Koko Eating Bananas', number: 875, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/koko-eating-bananas/', hasVisualization: true },
+  { id: 'find-minimum-in-rotated-sorted-array', name: 'Find Minimum in Rotated Sorted Array', number: 153, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/', hasVisualization: true },
+  { id: 'search-in-rotated-sorted-array', name: 'Search in Rotated Sorted Array', number: 33, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/search-in-rotated-sorted-array/', hasVisualization: true },
+  { id: 'time-based-key-value-store', name: 'Time Based Key-Value Store', number: 981, difficulty: 'Medium', topicId: 'binary-search', link: 'https://leetcode.com/problems/time-based-key-value-store/', hasVisualization: true },
+  { id: 'median-of-two-sorted-arrays', name: 'Median of Two Sorted Arrays', number: 4, difficulty: 'Hard', topicId: 'binary-search', link: 'https://leetcode.com/problems/median-of-two-sorted-arrays/', hasVisualization: true },
 
   // Linked List (11)
   { id: 'reverse-linked-list', name: 'Reverse Linked List', number: 206, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/reverse-linked-list/', hasVisualization: false },
