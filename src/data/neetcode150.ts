@@ -20,12 +20,12 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'trapping-rain-water', name: 'Trapping Rain Water', number: 42, difficulty: 'Hard', topicId: 'two-pointers', link: 'https://leetcode.com/problems/trapping-rain-water/', hasVisualization: true },
 
   // Sliding Window (6)
-  { id: 'best-time-to-buy-and-sell-stock', name: 'Best Time to Buy and Sell Stock', number: 121, difficulty: 'Easy', topicId: 'sliding-window', link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/', hasVisualization: false },
-  { id: 'longest-substring-without-repeating', name: 'Longest Substring Without Repeating Characters', number: 3, difficulty: 'Medium', topicId: 'sliding-window', link: 'https://leetcode.com/problems/longest-substring-without-repeating-characters/', hasVisualization: false },
-  { id: 'longest-repeating-character-replacement', name: 'Longest Repeating Character Replacement', number: 424, difficulty: 'Medium', topicId: 'sliding-window', link: 'https://leetcode.com/problems/longest-repeating-character-replacement/', hasVisualization: false },
-  { id: 'permutation-in-string', name: 'Permutation in String', number: 567, difficulty: 'Medium', topicId: 'sliding-window', link: 'https://leetcode.com/problems/permutation-in-string/', hasVisualization: false },
-  { id: 'minimum-window-substring', name: 'Minimum Window Substring', number: 76, difficulty: 'Hard', topicId: 'sliding-window', link: 'https://leetcode.com/problems/minimum-window-substring/', hasVisualization: false },
-  { id: 'sliding-window-maximum', name: 'Sliding Window Maximum', number: 239, difficulty: 'Hard', topicId: 'sliding-window', link: 'https://leetcode.com/problems/sliding-window-maximum/', hasVisualization: false },
+  { id: 'best-time-to-buy-and-sell-stock', name: 'Best Time to Buy and Sell Stock', number: 121, difficulty: 'Easy', topicId: 'sliding-window', link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/', hasVisualization: true },
+  { id: 'longest-substring-without-repeating', name: 'Longest Substring Without Repeating Characters', number: 3, difficulty: 'Medium', topicId: 'sliding-window', link: 'https://leetcode.com/problems/longest-substring-without-repeating-characters/', hasVisualization: true },
+  { id: 'longest-repeating-character-replacement', name: 'Longest Repeating Character Replacement', number: 424, difficulty: 'Medium', topicId: 'sliding-window', link: 'https://leetcode.com/problems/longest-repeating-character-replacement/', hasVisualization: true },
+  { id: 'permutation-in-string', name: 'Permutation in String', number: 567, difficulty: 'Medium', topicId: 'sliding-window', link: 'https://leetcode.com/problems/permutation-in-string/', hasVisualization: true },
+  { id: 'minimum-window-substring', name: 'Minimum Window Substring', number: 76, difficulty: 'Hard', topicId: 'sliding-window', link: 'https://leetcode.com/problems/minimum-window-substring/', hasVisualization: true },
+  { id: 'sliding-window-maximum', name: 'Sliding Window Maximum', number: 239, difficulty: 'Hard', topicId: 'sliding-window', link: 'https://leetcode.com/problems/sliding-window-maximum/', hasVisualization: true },
 
   // Stack (7)
   { id: 'valid-parentheses', name: 'Valid Parentheses', number: 20, difficulty: 'Easy', topicId: 'stack', link: 'https://leetcode.com/problems/valid-parentheses/', hasVisualization: true },
