@@ -58,7 +58,7 @@ export const useAuth = create<AuthState>((set, get) => ({
     set({ loading: true, error: null });
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: window.location.origin + '/flashcards' },
+      options: { redirectTo: `${window.location.origin}/flashcards` },
     });
     if (error) {
       set({ error: error.message, loading: false });
