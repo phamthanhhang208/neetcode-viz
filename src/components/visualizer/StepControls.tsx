@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import {
-  SkipBack, ChevronLeft, Play, Pause, ChevronRight, SkipForward,
+  SkipBack, ChevronLeft, Play, Pause, ChevronRight, SkipForward, RotateCcw,
 } from 'lucide-react';
 
 interface StepControlsProps {
@@ -40,7 +40,7 @@ export default function StepControls({
               : 'bg-accent-blue/20 text-accent-blue hover:bg-accent-blue/30',
           )}
         >
-          {isPlaying ? <Pause size={14} /> : <Play size={14} className="ml-0.5" />}
+          {isPlaying ? <Pause size={14} /> : isAtEnd ? <RotateCcw size={14} /> : <Play size={14} className="ml-0.5" />}
         </button>
         <ControlButton onClick={onNext} disabled={isAtEnd} icon={<ChevronRight size={16} />} />
         <ControlButton onClick={() => onGoTo(totalSteps - 1)} disabled={isAtEnd} icon={<SkipForward size={14} />} />

@@ -3,7 +3,8 @@ import { cn } from '@/lib/utils';
 import { getOrderedTopics } from '@/data/topics';
 import { getProblemsForTopicIndex } from '@/data/neetcode150';
 import { useProgress } from '@/hooks/useProgress';
-import { PanelLeftClose, PanelLeft } from 'lucide-react';
+import { PanelLeftClose, PanelLeft, Layers, LogOut } from 'lucide-react';
+import { useAuth } from '@/hooks/useAuth';
 
 interface SidebarProps {
   collapsed: boolean;
@@ -13,6 +14,7 @@ interface SidebarProps {
 export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
   const topics = getOrderedTopics();
   const getCompletedCount = useProgress((s) => s.getCompletedCount);
+  const { user, signOut } = useAuth();
 
   return (
     <aside
@@ -78,6 +80,42 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
           );
         })}
       </nav>
+
+      {/* Separator + Flashcards */}
+      <div className="mx-3 my-1 border-t border-editor-border" />
+      <NavLink
+        to="/flashcards"
+        className={({ isActive }) =>
+          cn(
+            'flex items-center gap-3 px-3 py-2 mx-1 rounded text-sm transition-colors',
+            isActive
+              ? 'bg-editor-active text-text-bright'
+              : 'text-text-secondary hover:bg-editor-hover hover:text-text-primary',
+          )
+        }
+      >
+        <Layers size={16} className="flex-shrink-0" />
+        {!collapsed && <span>Flashcards</span>}
+      </NavLink>
+
+      {/* User section */}
+      {user && (
+        <div className="px-3 py-2 border-t border-editor-border mt-auto">
+          <div className="flex items-center gap-2">
+            <div className="w-6 h-6 rounded-full bg-accent-blue/20 flex items-center justify-center text-accent-blue text-[10px] font-bold flex-shrink-0">
+              {user.email?.[0]?.toUpperCase() ?? '?'}
+            </div>
+            {!collapsed && (
+              <>
+                <span className="text-xs text-text-secondary truncate flex-1">{user.email}</span>
+                <button onClick={signOut} className="text-text-muted hover:text-text-primary transition-colors flex-shrink-0">
+                  <LogOut size={12} />
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </aside>
   );
 }

@@ -98,12 +98,16 @@ export function useStepper(initialSteps: VisualizationStep[]): [StepperState, St
   }, []);
 
   const togglePlay = useCallback(() => {
-    setIsPlaying((prev) => {
-      // Don't start playing if at the end
-      if (!prev && currentStep >= totalSteps - 1) return false;
-      return !prev;
-    });
-  }, [currentStep, totalSteps]);
+    if (isPlaying) {
+      setIsPlaying(false);
+      return;
+    }
+    // Replay from start when at the end
+    if (currentStep >= totalSteps - 1) {
+      setCurrentStep(0);
+    }
+    setIsPlaying(true);
+  }, [isPlaying, currentStep, totalSteps]);
 
   const setSpeed = useCallback((newSpeed: number) => {
     setSpeedState(newSpeed);
