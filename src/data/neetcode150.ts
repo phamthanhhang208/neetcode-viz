@@ -90,15 +90,15 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'find-median-from-data-stream', name: 'Find Median from Data Stream', number: 295, difficulty: 'Hard', topicId: 'heap-priority-queue', link: 'https://leetcode.com/problems/find-median-from-data-stream/', hasVisualization: true },
 
   // Backtracking (9)
-  { id: 'subsets', name: 'Subsets', number: 78, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/subsets/', hasVisualization: false },
-  { id: 'combination-sum', name: 'Combination Sum', number: 39, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/combination-sum/', hasVisualization: false },
-  { id: 'permutations', name: 'Permutations', number: 46, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/permutations/', hasVisualization: false },
-  { id: 'subsets-ii', name: 'Subsets II', number: 90, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/subsets-ii/', hasVisualization: false },
-  { id: 'combination-sum-ii', name: 'Combination Sum II', number: 40, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/combination-sum-ii/', hasVisualization: false },
-  { id: 'word-search', name: 'Word Search', number: 79, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/word-search/', hasVisualization: false },
-  { id: 'palindrome-partitioning', name: 'Palindrome Partitioning', number: 131, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/palindrome-partitioning/', hasVisualization: false },
-  { id: 'letter-combinations-of-a-phone-number', name: 'Letter Combinations of a Phone Number', number: 17, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/', hasVisualization: false },
-  { id: 'n-queens', name: 'N-Queens', number: 51, difficulty: 'Hard', topicId: 'backtracking', link: 'https://leetcode.com/problems/n-queens/', hasVisualization: false },
+  { id: 'subsets', name: 'Subsets', number: 78, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/subsets/', hasVisualization: true },
+  { id: 'combination-sum', name: 'Combination Sum', number: 39, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/combination-sum/', hasVisualization: true },
+  { id: 'permutations', name: 'Permutations', number: 46, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/permutations/', hasVisualization: true },
+  { id: 'subsets-ii', name: 'Subsets II', number: 90, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/subsets-ii/', hasVisualization: true },
+  { id: 'combination-sum-ii', name: 'Combination Sum II', number: 40, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/combination-sum-ii/', hasVisualization: true },
+  { id: 'word-search', name: 'Word Search', number: 79, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/word-search/', hasVisualization: true },
+  { id: 'palindrome-partitioning', name: 'Palindrome Partitioning', number: 131, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/palindrome-partitioning/', hasVisualization: true },
+  { id: 'letter-combinations-of-a-phone-number', name: 'Letter Combinations of a Phone Number', number: 17, difficulty: 'Medium', topicId: 'backtracking', link: 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/', hasVisualization: true },
+  { id: 'n-queens', name: 'N-Queens', number: 51, difficulty: 'Hard', topicId: 'backtracking', link: 'https://leetcode.com/problems/n-queens/', hasVisualization: true },
 
   // Graphs (13)
   { id: 'number-of-islands', name: 'Number of Islands', number: 200, difficulty: 'Medium', topicId: 'graphs', link: 'https://leetcode.com/problems/number-of-islands/', hasVisualization: false },

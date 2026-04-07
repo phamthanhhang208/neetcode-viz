@@ -8,6 +8,7 @@ import { linkedListProblems } from './problems/linked-list';
 import { treesProblems } from './problems/trees';
 import { triesProblems } from './problems/tries';
 import { heapProblems } from './problems/heap-priority-queue';
+import { backtrackingProblems } from './problems/backtracking';
 
 const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'arrays-hashing': arraysHashingProblems,
@@ -19,6 +20,7 @@ const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'trees': treesProblems,
   'tries': triesProblems,
   'heap-priority-queue': heapProblems,
+  'backtracking': backtrackingProblems,
 };
 
 export function getProblemsForTopic(topicId: TopicId): Problem[] {
