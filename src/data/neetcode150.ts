@@ -13,11 +13,11 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'longest-consecutive-sequence', name: 'Longest Consecutive Sequence', number: 128, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/longest-consecutive-sequence/', hasVisualization: true },
 
   // Two Pointers (5)
-  { id: 'valid-palindrome', name: 'Valid Palindrome', number: 125, difficulty: 'Easy', topicId: 'two-pointers', link: 'https://leetcode.com/problems/valid-palindrome/', hasVisualization: false },
-  { id: 'two-sum-ii', name: 'Two Sum II', number: 167, difficulty: 'Medium', topicId: 'two-pointers', link: 'https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/', hasVisualization: false },
-  { id: '3sum', name: '3Sum', number: 15, difficulty: 'Medium', topicId: 'two-pointers', link: 'https://leetcode.com/problems/3sum/', hasVisualization: false },
-  { id: 'container-with-most-water', name: 'Container With Most Water', number: 11, difficulty: 'Medium', topicId: 'two-pointers', link: 'https://leetcode.com/problems/container-with-most-water/', hasVisualization: false },
-  { id: 'trapping-rain-water', name: 'Trapping Rain Water', number: 42, difficulty: 'Hard', topicId: 'two-pointers', link: 'https://leetcode.com/problems/trapping-rain-water/', hasVisualization: false },
+  { id: 'valid-palindrome', name: 'Valid Palindrome', number: 125, difficulty: 'Easy', topicId: 'two-pointers', link: 'https://leetcode.com/problems/valid-palindrome/', hasVisualization: true },
+  { id: 'two-sum-ii', name: 'Two Sum II', number: 167, difficulty: 'Medium', topicId: 'two-pointers', link: 'https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/', hasVisualization: true },
+  { id: '3sum', name: '3Sum', number: 15, difficulty: 'Medium', topicId: 'two-pointers', link: 'https://leetcode.com/problems/3sum/', hasVisualization: true },
+  { id: 'container-with-most-water', name: 'Container With Most Water', number: 11, difficulty: 'Medium', topicId: 'two-pointers', link: 'https://leetcode.com/problems/container-with-most-water/', hasVisualization: true },
+  { id: 'trapping-rain-water', name: 'Trapping Rain Water', number: 42, difficulty: 'Hard', topicId: 'two-pointers', link: 'https://leetcode.com/problems/trapping-rain-water/', hasVisualization: true },
 
   // Sliding Window (6)
   { id: 'best-time-to-buy-and-sell-stock', name: 'Best Time to Buy and Sell Stock', number: 121, difficulty: 'Easy', topicId: 'sliding-window', link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/', hasVisualization: false },
