@@ -29,12 +29,12 @@ export const NEETCODE_150: NeetCodeProblem[] = [
 
   // Stack (7)
   { id: 'valid-parentheses', name: 'Valid Parentheses', number: 20, difficulty: 'Easy', topicId: 'stack', link: 'https://leetcode.com/problems/valid-parentheses/', hasVisualization: true },
-  { id: 'min-stack', name: 'Min Stack', number: 155, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/min-stack/', hasVisualization: false },
-  { id: 'evaluate-reverse-polish-notation', name: 'Evaluate Reverse Polish Notation', number: 150, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/evaluate-reverse-polish-notation/', hasVisualization: false },
-  { id: 'generate-parentheses', name: 'Generate Parentheses', number: 22, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/generate-parentheses/', hasVisualization: false },
-  { id: 'daily-temperatures', name: 'Daily Temperatures', number: 739, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/daily-temperatures/', hasVisualization: false },
-  { id: 'car-fleet', name: 'Car Fleet', number: 853, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/car-fleet/', hasVisualization: false },
-  { id: 'largest-rectangle-in-histogram', name: 'Largest Rectangle in Histogram', number: 84, difficulty: 'Hard', topicId: 'stack', link: 'https://leetcode.com/problems/largest-rectangle-in-histogram/', hasVisualization: false },
+  { id: 'min-stack', name: 'Min Stack', number: 155, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/min-stack/', hasVisualization: true },
+  { id: 'evaluate-reverse-polish-notation', name: 'Evaluate Reverse Polish Notation', number: 150, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/evaluate-reverse-polish-notation/', hasVisualization: true },
+  { id: 'generate-parentheses', name: 'Generate Parentheses', number: 22, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/generate-parentheses/', hasVisualization: true },
+  { id: 'daily-temperatures', name: 'Daily Temperatures', number: 739, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/daily-temperatures/', hasVisualization: true },
+  { id: 'car-fleet', name: 'Car Fleet', number: 853, difficulty: 'Medium', topicId: 'stack', link: 'https://leetcode.com/problems/car-fleet/', hasVisualization: true },
+  { id: 'largest-rectangle-in-histogram', name: 'Largest Rectangle in Histogram', number: 84, difficulty: 'Hard', topicId: 'stack', link: 'https://leetcode.com/problems/largest-rectangle-in-histogram/', hasVisualization: true },
 
   // Binary Search (7)
   { id: 'binary-search', name: 'Binary Search', number: 704, difficulty: 'Easy', topicId: 'binary-search', link: 'https://leetcode.com/problems/binary-search/', hasVisualization: true },
