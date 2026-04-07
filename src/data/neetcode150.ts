@@ -151,14 +151,14 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'regular-expression-matching', name: 'Regular Expression Matching', number: 10, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/regular-expression-matching/', hasVisualization: false },
 
   // Greedy (8)
-  { id: 'maximum-subarray', name: 'Maximum Subarray', number: 53, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/maximum-subarray/', hasVisualization: false },
-  { id: 'jump-game', name: 'Jump Game', number: 55, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/jump-game/', hasVisualization: false },
-  { id: 'jump-game-ii', name: 'Jump Game II', number: 45, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/jump-game-ii/', hasVisualization: false },
-  { id: 'gas-station', name: 'Gas Station', number: 134, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/gas-station/', hasVisualization: false },
-  { id: 'hand-of-straights', name: 'Hand of Straights', number: 846, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/hand-of-straights/', hasVisualization: false },
-  { id: 'merge-triplets-to-form-target', name: 'Merge Triplets to Form Target Triplet', number: 1899, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/merge-triplets-to-form-target-triplet/', hasVisualization: false },
-  { id: 'partition-labels', name: 'Partition Labels', number: 763, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/partition-labels/', hasVisualization: false },
-  { id: 'valid-parenthesis-string', name: 'Valid Parenthesis String', number: 678, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/valid-parenthesis-string/', hasVisualization: false },
+  { id: 'maximum-subarray', name: 'Maximum Subarray', number: 53, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/maximum-subarray/', hasVisualization: true },
+  { id: 'jump-game', name: 'Jump Game', number: 55, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/jump-game/', hasVisualization: true },
+  { id: 'jump-game-ii', name: 'Jump Game II', number: 45, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/jump-game-ii/', hasVisualization: true },
+  { id: 'gas-station', name: 'Gas Station', number: 134, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/gas-station/', hasVisualization: true },
+  { id: 'hand-of-straights', name: 'Hand of Straights', number: 846, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/hand-of-straights/', hasVisualization: true },
+  { id: 'merge-triplets-to-form-target', name: 'Merge Triplets to Form Target Triplet', number: 1899, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/merge-triplets-to-form-target-triplet/', hasVisualization: true },
+  { id: 'partition-labels', name: 'Partition Labels', number: 763, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/partition-labels/', hasVisualization: true },
+  { id: 'valid-parenthesis-string', name: 'Valid Parenthesis String', number: 678, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/valid-parenthesis-string/', hasVisualization: true },
 
   // Intervals (6)
   { id: 'insert-interval', name: 'Insert Interval', number: 57, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/insert-interval/', hasVisualization: false },
