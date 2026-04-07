@@ -2,15 +2,15 @@ import type { NeetCodeProblem, TopicId } from './types';
 
 export const NEETCODE_150: NeetCodeProblem[] = [
   // Arrays & Hashing (9)
-  { id: 'contains-duplicate', name: 'Contains Duplicate', number: 217, difficulty: 'Easy', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/contains-duplicate/', hasVisualization: false },
+  { id: 'contains-duplicate', name: 'Contains Duplicate', number: 217, difficulty: 'Easy', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/contains-duplicate/', hasVisualization: true },
   { id: 'valid-anagram', name: 'Valid Anagram', number: 242, difficulty: 'Easy', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/valid-anagram/', hasVisualization: true },
   { id: 'two-sum', name: 'Two Sum', number: 1, difficulty: 'Easy', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/two-sum/', hasVisualization: true },
-  { id: 'group-anagrams', name: 'Group Anagrams', number: 49, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/group-anagrams/', hasVisualization: false },
-  { id: 'top-k-frequent-elements', name: 'Top K Frequent Elements', number: 347, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/top-k-frequent-elements/', hasVisualization: false },
-  { id: 'encode-and-decode-strings', name: 'Encode and Decode Strings', number: 271, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/encode-and-decode-strings/', hasVisualization: false },
-  { id: 'product-of-array-except-self', name: 'Product of Array Except Self', number: 238, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/product-of-array-except-self/', hasVisualization: false },
-  { id: 'valid-sudoku', name: 'Valid Sudoku', number: 36, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/valid-sudoku/', hasVisualization: false },
-  { id: 'longest-consecutive-sequence', name: 'Longest Consecutive Sequence', number: 128, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/longest-consecutive-sequence/', hasVisualization: false },
+  { id: 'group-anagrams', name: 'Group Anagrams', number: 49, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/group-anagrams/', hasVisualization: true },
+  { id: 'top-k-frequent-elements', name: 'Top K Frequent Elements', number: 347, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/top-k-frequent-elements/', hasVisualization: true },
+  { id: 'encode-and-decode-strings', name: 'Encode and Decode Strings', number: 271, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/encode-and-decode-strings/', hasVisualization: true },
+  { id: 'product-of-array-except-self', name: 'Product of Array Except Self', number: 238, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/product-of-array-except-self/', hasVisualization: true },
+  { id: 'valid-sudoku', name: 'Valid Sudoku', number: 36, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/valid-sudoku/', hasVisualization: true },
+  { id: 'longest-consecutive-sequence', name: 'Longest Consecutive Sequence', number: 128, difficulty: 'Medium', topicId: 'arrays-hashing', link: 'https://leetcode.com/problems/longest-consecutive-sequence/', hasVisualization: true },
 
   // Two Pointers (5)
   { id: 'valid-palindrome', name: 'Valid Palindrome', number: 125, difficulty: 'Easy', topicId: 'two-pointers', link: 'https://leetcode.com/problems/valid-palindrome/', hasVisualization: false },
