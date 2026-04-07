@@ -46,17 +46,17 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'median-of-two-sorted-arrays', name: 'Median of Two Sorted Arrays', number: 4, difficulty: 'Hard', topicId: 'binary-search', link: 'https://leetcode.com/problems/median-of-two-sorted-arrays/', hasVisualization: true },
 
   // Linked List (11)
-  { id: 'reverse-linked-list', name: 'Reverse Linked List', number: 206, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/reverse-linked-list/', hasVisualization: false },
-  { id: 'merge-two-sorted-lists', name: 'Merge Two Sorted Lists', number: 21, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/merge-two-sorted-lists/', hasVisualization: false },
-  { id: 'reorder-list', name: 'Reorder List', number: 143, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/reorder-list/', hasVisualization: false },
-  { id: 'remove-nth-node-from-end', name: 'Remove Nth Node From End of List', number: 19, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/remove-nth-node-from-end-of-list/', hasVisualization: false },
-  { id: 'copy-list-with-random-pointer', name: 'Copy List with Random Pointer', number: 138, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/copy-list-with-random-pointer/', hasVisualization: false },
-  { id: 'add-two-numbers', name: 'Add Two Numbers', number: 2, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/add-two-numbers/', hasVisualization: false },
-  { id: 'linked-list-cycle', name: 'Linked List Cycle', number: 141, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/linked-list-cycle/', hasVisualization: false },
-  { id: 'find-the-duplicate-number', name: 'Find the Duplicate Number', number: 287, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/find-the-duplicate-number/', hasVisualization: false },
-  { id: 'lru-cache', name: 'LRU Cache', number: 146, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/lru-cache/', hasVisualization: false },
-  { id: 'merge-k-sorted-lists', name: 'Merge k Sorted Lists', number: 23, difficulty: 'Hard', topicId: 'linked-list', link: 'https://leetcode.com/problems/merge-k-sorted-lists/', hasVisualization: false },
-  { id: 'reverse-nodes-in-k-group', name: 'Reverse Nodes in k-Group', number: 25, difficulty: 'Hard', topicId: 'linked-list', link: 'https://leetcode.com/problems/reverse-nodes-in-k-group/', hasVisualization: false },
+  { id: 'reverse-linked-list', name: 'Reverse Linked List', number: 206, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/reverse-linked-list/', hasVisualization: true },
+  { id: 'merge-two-sorted-lists', name: 'Merge Two Sorted Lists', number: 21, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/merge-two-sorted-lists/', hasVisualization: true },
+  { id: 'reorder-list', name: 'Reorder List', number: 143, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/reorder-list/', hasVisualization: true },
+  { id: 'remove-nth-node-from-end', name: 'Remove Nth Node From End of List', number: 19, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/remove-nth-node-from-end-of-list/', hasVisualization: true },
+  { id: 'copy-list-with-random-pointer', name: 'Copy List with Random Pointer', number: 138, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/copy-list-with-random-pointer/', hasVisualization: true },
+  { id: 'add-two-numbers', name: 'Add Two Numbers', number: 2, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/add-two-numbers/', hasVisualization: true },
+  { id: 'linked-list-cycle', name: 'Linked List Cycle', number: 141, difficulty: 'Easy', topicId: 'linked-list', link: 'https://leetcode.com/problems/linked-list-cycle/', hasVisualization: true },
+  { id: 'find-the-duplicate-number', name: 'Find the Duplicate Number', number: 287, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/find-the-duplicate-number/', hasVisualization: true },
+  { id: 'lru-cache', name: 'LRU Cache', number: 146, difficulty: 'Medium', topicId: 'linked-list', link: 'https://leetcode.com/problems/lru-cache/', hasVisualization: true },
+  { id: 'merge-k-sorted-lists', name: 'Merge k Sorted Lists', number: 23, difficulty: 'Hard', topicId: 'linked-list', link: 'https://leetcode.com/problems/merge-k-sorted-lists/', hasVisualization: true },
+  { id: 'reverse-nodes-in-k-group', name: 'Reverse Nodes in k-Group', number: 25, difficulty: 'Hard', topicId: 'linked-list', link: 'https://leetcode.com/problems/reverse-nodes-in-k-group/', hasVisualization: true },
 
   // Trees (15)
   { id: 'invert-binary-tree', name: 'Invert Binary Tree', number: 226, difficulty: 'Easy', topicId: 'trees', link: 'https://leetcode.com/problems/invert-binary-tree/', hasVisualization: false },
