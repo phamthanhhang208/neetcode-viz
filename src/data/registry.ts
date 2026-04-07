@@ -5,6 +5,7 @@ import { binarySearchProblems } from './problems/binary-search';
 import { twoPointersProblems } from './problems/two-pointers';
 import { slidingWindowProblems } from './problems/sliding-window';
 import { linkedListProblems } from './problems/linked-list';
+import { treesProblems } from './problems/trees';
 
 const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'arrays-hashing': arraysHashingProblems,
@@ -13,6 +14,7 @@ const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'stack': stackProblems,
   'binary-search': binarySearchProblems,
   'linked-list': linkedListProblems,
+  'trees': treesProblems,
 };
 
 export function getProblemsForTopic(topicId: TopicId): Problem[] {
