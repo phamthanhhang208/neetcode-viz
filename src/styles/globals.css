@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-editor-bg: #1e1e1e;
+  --color-editor-sidebar: #252526;
+  --color-editor-active: #2d2d2d;
+  --color-editor-hover: #2a2d2e;
+  --color-editor-border: #3e3e42;
+  --color-editor-line: #264f78;
+
+  --color-accent-blue: #569cd6;
+  --color-accent-green: #6a9955;
+  --color-accent-yellow: #dcdcaa;
+  --color-accent-orange: #ce9178;
+  --color-accent-purple: #c586c0;
+  --color-accent-red: #f44747;
+  --color-accent-cyan: #4ec9b0;
+  --color-accent-light-blue: #9cdcfe;
+
+  --color-text-primary: #d4d4d4;
+  --color-text-secondary: #808080;
+  --color-text-muted: #5a5a5a;
+  --color-text-bright: #ffffff;
+
+  --color-diff-easy: #4ec9b0;
+  --color-diff-medium: #dcdcaa;
+  --color-diff-hard: #f44747;
+
+  --color-status-done: #6a9955;
+  --color-status-progress: #569cd6;
+  --color-status-todo: #3e3e42;
+
+  --font-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
+  --font-sans: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3e3e42 #1e1e1e;
+}
+
+body {
+  margin: 0;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+::selection {
+  background: #264f78;
+  color: #ffffff;
+}
