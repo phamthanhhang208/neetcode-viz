@@ -161,31 +161,31 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'valid-parenthesis-string', name: 'Valid Parenthesis String', number: 678, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/valid-parenthesis-string/', hasVisualization: true },
 
   // Intervals (6)
-  { id: 'insert-interval', name: 'Insert Interval', number: 57, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/insert-interval/', hasVisualization: false },
-  { id: 'merge-intervals', name: 'Merge Intervals', number: 56, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/merge-intervals/', hasVisualization: false },
-  { id: 'non-overlapping-intervals', name: 'Non-overlapping Intervals', number: 435, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/non-overlapping-intervals/', hasVisualization: false },
-  { id: 'meeting-rooms', name: 'Meeting Rooms', number: 252, difficulty: 'Easy', topicId: 'intervals', link: 'https://leetcode.com/problems/meeting-rooms/', hasVisualization: false },
-  { id: 'meeting-rooms-ii', name: 'Meeting Rooms II', number: 253, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/meeting-rooms-ii/', hasVisualization: false },
-  { id: 'minimum-interval-to-include-each-query', name: 'Minimum Interval to Include Each Query', number: 1851, difficulty: 'Hard', topicId: 'intervals', link: 'https://leetcode.com/problems/minimum-interval-to-include-each-query/', hasVisualization: false },
+  { id: 'insert-interval', name: 'Insert Interval', number: 57, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/insert-interval/', hasVisualization: true },
+  { id: 'merge-intervals', name: 'Merge Intervals', number: 56, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/merge-intervals/', hasVisualization: true },
+  { id: 'non-overlapping-intervals', name: 'Non-overlapping Intervals', number: 435, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/non-overlapping-intervals/', hasVisualization: true },
+  { id: 'meeting-rooms', name: 'Meeting Rooms', number: 252, difficulty: 'Easy', topicId: 'intervals', link: 'https://leetcode.com/problems/meeting-rooms/', hasVisualization: true },
+  { id: 'meeting-rooms-ii', name: 'Meeting Rooms II', number: 253, difficulty: 'Medium', topicId: 'intervals', link: 'https://leetcode.com/problems/meeting-rooms-ii/', hasVisualization: true },
+  { id: 'minimum-interval-to-include-each-query', name: 'Minimum Interval to Include Each Query', number: 1851, difficulty: 'Hard', topicId: 'intervals', link: 'https://leetcode.com/problems/minimum-interval-to-include-each-query/', hasVisualization: true },
 
   // Math & Geometry (8)
-  { id: 'rotate-image', name: 'Rotate Image', number: 48, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/rotate-image/', hasVisualization: false },
-  { id: 'spiral-matrix', name: 'Spiral Matrix', number: 54, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/spiral-matrix/', hasVisualization: false },
-  { id: 'set-matrix-zeroes', name: 'Set Matrix Zeroes', number: 73, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/set-matrix-zeroes/', hasVisualization: false },
-  { id: 'happy-number', name: 'Happy Number', number: 202, difficulty: 'Easy', topicId: 'math-geometry', link: 'https://leetcode.com/problems/happy-number/', hasVisualization: false },
-  { id: 'plus-one', name: 'Plus One', number: 66, difficulty: 'Easy', topicId: 'math-geometry', link: 'https://leetcode.com/problems/plus-one/', hasVisualization: false },
-  { id: 'pow-x-n', name: 'Pow(x, n)', number: 50, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/powx-n/', hasVisualization: false },
-  { id: 'multiply-strings', name: 'Multiply Strings', number: 43, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/multiply-strings/', hasVisualization: false },
-  { id: 'detect-squares', name: 'Detect Squares', number: 2013, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/detect-squares/', hasVisualization: false },
+  { id: 'rotate-image', name: 'Rotate Image', number: 48, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/rotate-image/', hasVisualization: true },
+  { id: 'spiral-matrix', name: 'Spiral Matrix', number: 54, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/spiral-matrix/', hasVisualization: true },
+  { id: 'set-matrix-zeroes', name: 'Set Matrix Zeroes', number: 73, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/set-matrix-zeroes/', hasVisualization: true },
+  { id: 'happy-number', name: 'Happy Number', number: 202, difficulty: 'Easy', topicId: 'math-geometry', link: 'https://leetcode.com/problems/happy-number/', hasVisualization: true },
+  { id: 'plus-one', name: 'Plus One', number: 66, difficulty: 'Easy', topicId: 'math-geometry', link: 'https://leetcode.com/problems/plus-one/', hasVisualization: true },
+  { id: 'pow-x-n', name: 'Pow(x, n)', number: 50, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/powx-n/', hasVisualization: true },
+  { id: 'multiply-strings', name: 'Multiply Strings', number: 43, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/multiply-strings/', hasVisualization: true },
+  { id: 'detect-squares', name: 'Detect Squares', number: 2013, difficulty: 'Medium', topicId: 'math-geometry', link: 'https://leetcode.com/problems/detect-squares/', hasVisualization: true },
 
   // Bit Manipulation (7)
-  { id: 'single-number', name: 'Single Number', number: 136, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/single-number/', hasVisualization: false },
-  { id: 'number-of-1-bits', name: 'Number of 1 Bits', number: 191, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/number-of-1-bits/', hasVisualization: false },
-  { id: 'counting-bits', name: 'Counting Bits', number: 338, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/counting-bits/', hasVisualization: false },
-  { id: 'reverse-bits', name: 'Reverse Bits', number: 190, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/reverse-bits/', hasVisualization: false },
-  { id: 'missing-number', name: 'Missing Number', number: 268, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/missing-number/', hasVisualization: false },
-  { id: 'sum-of-two-integers', name: 'Sum of Two Integers', number: 371, difficulty: 'Medium', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/sum-of-two-integers/', hasVisualization: false },
-  { id: 'reverse-integer', name: 'Reverse Integer', number: 7, difficulty: 'Medium', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/reverse-integer/', hasVisualization: false },
+  { id: 'single-number', name: 'Single Number', number: 136, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/single-number/', hasVisualization: true },
+  { id: 'number-of-1-bits', name: 'Number of 1 Bits', number: 191, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/number-of-1-bits/', hasVisualization: true },
+  { id: 'counting-bits', name: 'Counting Bits', number: 338, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/counting-bits/', hasVisualization: true },
+  { id: 'reverse-bits', name: 'Reverse Bits', number: 190, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/reverse-bits/', hasVisualization: true },
+  { id: 'missing-number', name: 'Missing Number', number: 268, difficulty: 'Easy', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/missing-number/', hasVisualization: true },
+  { id: 'sum-of-two-integers', name: 'Sum of Two Integers', number: 371, difficulty: 'Medium', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/sum-of-two-integers/', hasVisualization: true },
+  { id: 'reverse-integer', name: 'Reverse Integer', number: 7, difficulty: 'Medium', topicId: 'bit-manipulation', link: 'https://leetcode.com/problems/reverse-integer/', hasVisualization: true },
 ];
 
 export function getProblemsForTopicIndex(topicId: TopicId): NeetCodeProblem[] {
