@@ -14,6 +14,7 @@ import { greedyProblems } from './problems/greedy';
 import { intervalsProblems } from './problems/intervals';
 import { mathGeometryProblems } from './problems/math-geometry';
 import { bitManipulationProblems } from './problems/bit-manipulation';
+import { graphsProblems } from './problems/graphs';
 
 const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'arrays-hashing': arraysHashingProblems,
@@ -31,6 +32,7 @@ const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'intervals': intervalsProblems,
   'math-geometry': mathGeometryProblems,
   'bit-manipulation': bitManipulationProblems,
+  'graphs': graphsProblems,
 };
 
 export function getProblemsForTopic(topicId: TopicId): Problem[] {
