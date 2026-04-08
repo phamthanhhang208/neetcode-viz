@@ -15,7 +15,7 @@ interface Props {
 export default function TopicStudyPage({ topic }: Props) {
   const navigate = useNavigate();
   const problems = getProblemsForTopicIndex(topic.id);
-  const { getStatus } = useProgress();
+  const { getStatus, setStatus } = useProgress();
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-8">
@@ -86,7 +86,7 @@ export default function TopicStudyPage({ topic }: Props) {
         <h2 className="text-lg font-semibold text-text-bright mb-4">Problems</h2>
         <div className="space-y-1">
           {problems.map((problem) => (
-            <ProblemRow key={problem.id} problem={problem} topicId={topic.id} status={getStatus(problem.id)} onClick={() => {
+            <ProblemRow key={problem.id} problem={problem} topicId={topic.id} status={getStatus(problem.id)} onStatusChange={(s) => setStatus(problem.id, s)} onClick={() => {
               if (problem.hasVisualization) {
                 navigate(`/topic/${topic.id}/${problem.id}`);
               }
@@ -98,10 +98,11 @@ export default function TopicStudyPage({ topic }: Props) {
   );
 }
 
-function ProblemRow({ problem, topicId, status, onClick }: {
+function ProblemRow({ problem, topicId, status, onStatusChange, onClick }: {
   problem: NeetCodeProblem;
   topicId: TopicId;
   status: ReturnType<ReturnType<typeof useProgress>['getStatus']>;
+  onStatusChange: (status: import('@/data/types').ProblemStatus) => void;
   onClick: () => void;
 }) {
   const canClick = problem.hasVisualization;
@@ -117,7 +118,7 @@ function ProblemRow({ problem, topicId, status, onClick }: {
           : 'opacity-40 cursor-not-allowed',
       )}
     >
-      <StatusDot status={status} />
+      <StatusDot status={status} onClick={onStatusChange} />
       <span className="text-xs text-text-muted font-mono w-8">{problem.number}</span>
       <span className="flex-1 text-sm text-text-primary">{problem.name}</span>
       <DifficultyBadge difficulty={problem.difficulty} />

@@ -9,7 +9,7 @@ import type { TopicId } from '@/data/types';
 export default function RoadmapGrid() {
   const navigate = useNavigate();
   const topics = getOrderedTopics();
-  const { getStatus, getCompletedCount } = useProgress();
+  const { getStatus, setStatus, getCompletedCount } = useProgress();
   const coverage = getVizCoverage();
   const totalDone = useProgress((s) =>
     NEETCODE_150.filter((p) => s.statuses[p.id] === 'done').length,
@@ -59,7 +59,7 @@ export default function RoadmapGrid() {
                           : 'border-editor-border/50 bg-editor-bg/50 opacity-40 cursor-not-allowed',
                       )}
                     >
-                      <StatusDot status={status} />
+                      <StatusDot status={status} onClick={(next) => setStatus(problem.id, next)} />
                       <span className={cn('truncate max-w-[140px]', difficultyColor(problem.difficulty))}>
                         {problem.number}. {problem.name}
                       </span>
