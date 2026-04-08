@@ -138,17 +138,17 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'partition-equal-subset-sum', name: 'Partition Equal Subset Sum', number: 416, difficulty: 'Medium', topicId: '1d-dp', link: 'https://leetcode.com/problems/partition-equal-subset-sum/', hasVisualization: true },
 
   // 2-D DP (11)
-  { id: 'unique-paths', name: 'Unique Paths', number: 62, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/unique-paths/', hasVisualization: false },
-  { id: 'longest-common-subsequence', name: 'Longest Common Subsequence', number: 1143, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/longest-common-subsequence/', hasVisualization: false },
-  { id: 'best-time-to-buy-sell-stock-cooldown', name: 'Best Time to Buy and Sell Stock with Cooldown', number: 309, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/', hasVisualization: false },
-  { id: 'coin-change-ii', name: 'Coin Change II', number: 518, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/coin-change-ii/', hasVisualization: false },
-  { id: 'target-sum', name: 'Target Sum', number: 494, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/target-sum/', hasVisualization: false },
-  { id: 'interleaving-string', name: 'Interleaving String', number: 97, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/interleaving-string/', hasVisualization: false },
-  { id: 'longest-increasing-path-in-matrix', name: 'Longest Increasing Path in a Matrix', number: 329, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/longest-increasing-path-in-a-matrix/', hasVisualization: false },
-  { id: 'distinct-subsequences', name: 'Distinct Subsequences', number: 115, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/distinct-subsequences/', hasVisualization: false },
-  { id: 'edit-distance', name: 'Edit Distance', number: 72, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/edit-distance/', hasVisualization: false },
-  { id: 'burst-balloons', name: 'Burst Balloons', number: 312, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/burst-balloons/', hasVisualization: false },
-  { id: 'regular-expression-matching', name: 'Regular Expression Matching', number: 10, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/regular-expression-matching/', hasVisualization: false },
+  { id: 'unique-paths', name: 'Unique Paths', number: 62, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/unique-paths/', hasVisualization: true },
+  { id: 'longest-common-subsequence', name: 'Longest Common Subsequence', number: 1143, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/longest-common-subsequence/', hasVisualization: true },
+  { id: 'best-time-to-buy-sell-stock-cooldown', name: 'Best Time to Buy and Sell Stock with Cooldown', number: 309, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/', hasVisualization: true },
+  { id: 'coin-change-ii', name: 'Coin Change II', number: 518, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/coin-change-ii/', hasVisualization: true },
+  { id: 'target-sum', name: 'Target Sum', number: 494, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/target-sum/', hasVisualization: true },
+  { id: 'interleaving-string', name: 'Interleaving String', number: 97, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/interleaving-string/', hasVisualization: true },
+  { id: 'longest-increasing-path-in-matrix', name: 'Longest Increasing Path in a Matrix', number: 329, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/longest-increasing-path-in-a-matrix/', hasVisualization: true },
+  { id: 'distinct-subsequences', name: 'Distinct Subsequences', number: 115, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/distinct-subsequences/', hasVisualization: true },
+  { id: 'edit-distance', name: 'Edit Distance', number: 72, difficulty: 'Medium', topicId: '2d-dp', link: 'https://leetcode.com/problems/edit-distance/', hasVisualization: true },
+  { id: 'burst-balloons', name: 'Burst Balloons', number: 312, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/burst-balloons/', hasVisualization: true },
+  { id: 'regular-expression-matching', name: 'Regular Expression Matching', number: 10, difficulty: 'Hard', topicId: '2d-dp', link: 'https://leetcode.com/problems/regular-expression-matching/', hasVisualization: true },
 
   // Greedy (8)
   { id: 'maximum-subarray', name: 'Maximum Subarray', number: 53, difficulty: 'Medium', topicId: 'greedy', link: 'https://leetcode.com/problems/maximum-subarray/', hasVisualization: true },
