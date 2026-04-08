@@ -1,13 +1,20 @@
 import type { SupportedLanguage, CodeSolution } from '../types';
+import { arraysHashingTranslations } from './arrays-hashing';
+import { twoPointersTranslations } from './two-pointers';
+import { stackTranslations } from './stack';
+import { binarySearchTranslations } from './binary-search';
+import { treesTranslations } from './trees';
+import { triesTranslations } from './tries';
 
 export type TranslationMap = Record<string, Partial<Record<SupportedLanguage, CodeSolution>>>;
 
-// Translations will be added here as they are generated.
-// Each topic file exports a TranslationMap keyed by problem ID.
-// Example:
-//   import { arraysHashingTranslations } from './arrays-hashing';
-//   merge into the combined map below.
-
-const translations: TranslationMap = {};
+const translations: TranslationMap = {
+  ...arraysHashingTranslations,
+  ...twoPointersTranslations,
+  ...stackTranslations,
+  ...binarySearchTranslations,
+  ...treesTranslations,
+  ...triesTranslations,
+};
 
 export default translations;
