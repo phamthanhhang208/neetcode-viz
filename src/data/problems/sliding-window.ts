@@ -734,4 +734,4 @@ def maxSlidingWindow(nums, k):
 };
 
 
-export const slidingWindowProblems: Problem[] = [bestTimeBuySell, longestSubstring, longestRepeating, permutationInString, minWindowSubstring, slidingWindowMax];
+export const slidingWindowProblems: Problem[] = [bestTimeToBuyAndSellStock, longestSubstringWithoutRepeating, longestRepeatingCharacterReplacement, permutationInString, minWindowSubstring, slidingWindowMax];
