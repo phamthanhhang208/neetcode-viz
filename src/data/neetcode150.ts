@@ -116,12 +116,12 @@ export const NEETCODE_150: NeetCodeProblem[] = [
   { id: 'word-ladder', name: 'Word Ladder', number: 127, difficulty: 'Hard', topicId: 'graphs', link: 'https://leetcode.com/problems/word-ladder/', hasVisualization: true },
 
   // Advanced Graphs (6)
-  { id: 'reconstruct-itinerary', name: 'Reconstruct Itinerary', number: 332, difficulty: 'Hard', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/reconstruct-itinerary/', hasVisualization: false },
-  { id: 'min-cost-to-connect-all-points', name: 'Min Cost to Connect All Points', number: 1584, difficulty: 'Medium', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/min-cost-to-connect-all-points/', hasVisualization: false },
-  { id: 'network-delay-time', name: 'Network Delay Time', number: 743, difficulty: 'Medium', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/network-delay-time/', hasVisualization: false },
-  { id: 'swim-in-rising-water', name: 'Swim in Rising Water', number: 778, difficulty: 'Hard', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/swim-in-rising-water/', hasVisualization: false },
-  { id: 'alien-dictionary', name: 'Alien Dictionary', number: 269, difficulty: 'Hard', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/alien-dictionary/', hasVisualization: false },
-  { id: 'cheapest-flights-within-k-stops', name: 'Cheapest Flights Within K Stops', number: 787, difficulty: 'Medium', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/cheapest-flights-within-k-stops/', hasVisualization: false },
+  { id: 'reconstruct-itinerary', name: 'Reconstruct Itinerary', number: 332, difficulty: 'Hard', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/reconstruct-itinerary/', hasVisualization: true },
+  { id: 'min-cost-to-connect-all-points', name: 'Min Cost to Connect All Points', number: 1584, difficulty: 'Medium', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/min-cost-to-connect-all-points/', hasVisualization: true },
+  { id: 'network-delay-time', name: 'Network Delay Time', number: 743, difficulty: 'Medium', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/network-delay-time/', hasVisualization: true },
+  { id: 'swim-in-rising-water', name: 'Swim in Rising Water', number: 778, difficulty: 'Hard', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/swim-in-rising-water/', hasVisualization: true },
+  { id: 'alien-dictionary', name: 'Alien Dictionary', number: 269, difficulty: 'Hard', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/alien-dictionary/', hasVisualization: true },
+  { id: 'cheapest-flights-within-k-stops', name: 'Cheapest Flights Within K Stops', number: 787, difficulty: 'Medium', topicId: 'advanced-graphs', link: 'https://leetcode.com/problems/cheapest-flights-within-k-stops/', hasVisualization: true },
 
   // 1-D DP (12)
   { id: 'climbing-stairs', name: 'Climbing Stairs', number: 70, difficulty: 'Easy', topicId: '1d-dp', link: 'https://leetcode.com/problems/climbing-stairs/', hasVisualization: true },
