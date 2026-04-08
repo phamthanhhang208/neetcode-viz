@@ -578,4 +578,4 @@ const regexMatching: Problem = {
 };
 
 
-export const twoDDPProblems: Problem[] = [uniquePaths, longestCommonSubsequence, buySellCooldown, coinChangeII, targetSum, interleavingString, longestIncreasingPath, distinctSubsequences, editDistance, burstBalloons, regexMatching];
+export const twoDDPProblems: Problem[] = [uniquePaths, longestCommonSubsequence, bestTimeBuySellCooldown, coinChangeII, targetSum, interleavingString, longestIncreasingPath, distinctSubsequences, editDistance, burstBalloons, regexMatching];

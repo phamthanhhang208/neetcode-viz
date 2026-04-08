@@ -1872,4 +1872,4 @@ const reverseKGroup: Problem = {
 };
 
 
-export const linkedListProblems: Problem[] = [reverseLinkedList, mergeTwoSorted, reorderList, removeNthFromEnd, addTwoNumbers, linkedListCycle, copyListRandom, findDuplicate, lruCache, mergeKSorted, reverseKGroup];
+export const linkedListProblems: Problem[] = [reverseLinkedList, mergeTwoSortedLists, reorderList, removeNthNodeFromEnd, addTwoNumbers, linkedListCycle, copyListRandom, findDuplicate, lruCache, mergeKSorted, reverseKGroup];
