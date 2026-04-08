@@ -17,6 +17,7 @@ import { bitManipulationProblems } from './problems/bit-manipulation';
 import { graphsProblems } from './problems/graphs';
 import { advancedGraphsProblems } from './problems/advanced-graphs';
 import { twoDDPProblems } from './problems/2d-dp';
+import translations from './translations';
 
 const PROBLEM_REGISTRY: Partial<Record<TopicId, Problem[]>> = {
   'arrays-hashing': arraysHashingProblems,
@@ -45,5 +46,9 @@ export function getProblemsForTopic(topicId: TopicId): Problem[] {
 
 export function getProblemById(topicId: TopicId, problemId: string): Problem | undefined {
   const problems = getProblemsForTopic(topicId);
-  return problems.find((p) => p.id === problemId);
+  const problem = problems.find((p) => p.id === problemId);
+  if (problem && translations[problemId]) {
+    return { ...problem, codeSolutions: translations[problemId] };
+  }
+  return problem;
 }

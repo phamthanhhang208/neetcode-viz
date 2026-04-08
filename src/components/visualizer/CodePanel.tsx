@@ -29,6 +29,10 @@ const KEYWORDS = new Set([
   'catch', 'finally', 'throw', 'extends', 'implements', 'interface', 'type',
   'enum', 'abstract', 'static', 'private', 'public', 'protected', 'readonly',
   'range', 'len', 'print', 'self', 'pass', 'with', 'as', 'except', 'raise',
+  // Go
+  'func', 'package', 'defer', 'go', 'chan', 'select', 'struct', 'nil',
+  'make', 'append', 'panic', 'recover', 'int', 'float64', 'float32',
+  'byte', 'rune', 'error', 'string', 'bool', 'map', 'fallthrough',
 ]);
 
 function tokenize(line: string): { text: string; color: string }[] {

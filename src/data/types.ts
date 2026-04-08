@@ -179,6 +179,13 @@ export interface VisualizationStep {
   isKeyMoment?: boolean;
 }
 
+export type SupportedLanguage = 'python' | 'javascript' | 'go';
+
+export interface CodeSolution {
+  code: string;
+  lineMap?: Record<number, number>;
+}
+
 export interface Problem {
   id: string;
   name: string;
@@ -195,6 +202,7 @@ export interface Problem {
   timeComplexity: string;
   spaceComplexity: string;
   pattern: string;
+  codeSolutions?: Partial<Record<SupportedLanguage, CodeSolution>>;
 }
 
 export interface TopicSummary {
