@@ -9,6 +9,14 @@ import { triesTranslations } from './tries';
 import { heapTranslations } from './heap-priority-queue';
 import { backtrackingTranslations } from './backtracking';
 import { linkedListTranslations } from './linked-list';
+import { graphsTranslations } from './graphs';
+import { advancedGraphsTranslations } from './advanced-graphs';
+import { oneDDPTranslations } from './1d-dp';
+import { twoDDPTranslations } from './2d-dp';
+import { greedyTranslations } from './greedy';
+import { intervalsTranslations } from './intervals';
+import { mathGeometryTranslations } from './math-geometry';
+import { bitManipulationTranslations } from './bit-manipulation';
 
 export type TranslationMap = Record<string, Partial<Record<SupportedLanguage, CodeSolution>>>;
 
@@ -23,6 +31,14 @@ const translations: TranslationMap = {
   ...triesTranslations,
   ...heapTranslations,
   ...backtrackingTranslations,
+  ...graphsTranslations,
+  ...advancedGraphsTranslations,
+  ...oneDDPTranslations,
+  ...twoDDPTranslations,
+  ...greedyTranslations,
+  ...intervalsTranslations,
+  ...mathGeometryTranslations,
+  ...bitManipulationTranslations,
 };
 
 export default translations;
