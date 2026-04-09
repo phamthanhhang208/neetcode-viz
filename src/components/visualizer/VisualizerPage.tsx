@@ -9,6 +9,9 @@ import VariablesPanel from './VariablesPanel';
 import StepControls from './StepControls';
 import StepMessage from './StepMessage';
 import HintsPanel from './HintsPanel';
+import PseudocodePanel from './PseudocodePanel';
+import PatternPanel from './PatternPanel';
+import ComplexityPanel from './ComplexityPanel';
 import DifficultyBadge from '@/components/shared/DifficultyBadge';
 import { ExternalLink, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -182,6 +185,11 @@ export default function VisualizerPage({ problem }: Props) {
         message={state.step.message}
         isKeyMoment={state.step.isKeyMoment}
       />
+
+      {/* Understanding Panels */}
+      <PseudocodePanel code={problem.code} />
+      <PatternPanel pattern={problem.pattern} timeComplexity={problem.timeComplexity} spaceComplexity={problem.spaceComplexity} />
+      <ComplexityPanel timeComplexity={problem.timeComplexity} spaceComplexity={problem.spaceComplexity} />
 
       {/* Hints */}
       {problem.hints && <HintsPanel hints={problem.hints} />}
