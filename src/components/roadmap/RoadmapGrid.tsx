@@ -9,6 +9,7 @@ import type { TopicId } from '@/data/types';
 export default function RoadmapGrid() {
   const navigate = useNavigate();
   const topics = getOrderedTopics();
+  const statuses = useProgress((s) => s.statuses);
   const { getStatus, setStatus, getCompletedCount } = useProgress();
   const coverage = getVizCoverage();
   const totalDone = useProgress((s) =>

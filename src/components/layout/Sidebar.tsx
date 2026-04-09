@@ -13,6 +13,7 @@ interface SidebarProps {
 
 export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
   const topics = getOrderedTopics();
+  const _statuses = useProgress((s) => s.statuses);
   const getCompletedCount = useProgress((s) => s.getCompletedCount);
   const { user, signOut } = useAuth();
 
