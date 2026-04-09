@@ -6,7 +6,7 @@ import { stackTranslations } from './stack';
 import { binarySearchTranslations } from './binary-search';
 import { treesTranslations } from './trees';
 import { triesTranslations } from './tries';
-import { heapTranslations } from './heap-priority-queue';
+import { heapPriorityQueueTranslations } from './heap-priority-queue';
 import { backtrackingTranslations } from './backtracking';
 import { linkedListTranslations } from './linked-list';
 import { graphsTranslations } from './graphs';
@@ -29,7 +29,7 @@ const translations: TranslationMap = {
   ...linkedListTranslations,
   ...treesTranslations,
   ...triesTranslations,
-  ...heapTranslations,
+  ...heapPriorityQueueTranslations,
   ...backtrackingTranslations,
   ...graphsTranslations,
   ...advancedGraphsTranslations,
