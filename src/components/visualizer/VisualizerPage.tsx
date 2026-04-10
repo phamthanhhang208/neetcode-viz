@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useMemo } from 'react';
+import { useEffect, useCallback, useMemo, useState, useRef } from 'react';
 import type { Problem, SupportedLanguage } from '@/data/types';
 import { useStepper } from '@/hooks/useStepper';
 import { useProgress } from '@/hooks/useProgress';
@@ -12,6 +12,8 @@ import HintsPanel from './HintsPanel';
 import PseudocodePanel from './PseudocodePanel';
 import PatternPanel from './PatternPanel';
 import ComplexityPanel from './ComplexityPanel';
+import ResizeHandle from './ResizeHandle';
+import TranscriptPanel from './TranscriptPanel';
 import DifficultyBadge from '@/components/shared/DifficultyBadge';
 import { ExternalLink, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -31,11 +33,28 @@ export default function VisualizerPage({ problem }: Props) {
   const setLastVisited = useProgress((s) => s.setLastVisited);
   const setStatus = useProgress((s) => s.setStatus);
   const { language, setLanguage } = useLanguage();
+  const [splitPercent, setSplitPercent] = useState(50);
+  const [showTranscript, setShowTranscript] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setLastVisited(problem.id);
     setStatus(problem.id, 'in-progress');
   }, [problem.id, setLastVisited, setStatus]);
+
+  // Show transcript when reaching the end
+  useEffect(() => {
+    if (state.isAtEnd && !state.isPlaying) {
+      setShowTranscript(true);
+    }
+  }, [state.isAtEnd, state.isPlaying]);
+
+  // Hide transcript when user navigates away from end
+  useEffect(() => {
+    if (!state.isAtEnd) {
+      setShowTranscript(false);
+    }
+  }, [state.isAtEnd]);
 
   const hasTranslation = useCallback(
     (lang: SupportedLanguage) => lang === 'python' || !!problem.codeSolutions?.[lang]?.code,
@@ -56,6 +75,13 @@ export default function VisualizerPage({ problem }: Props) {
     return problem.codeSolutions[language].lineMap![state.step.line] ?? state.step.line;
   }, [language, problem, state.step.line]);
 
+  const handleHorizontalResize = useCallback((delta: number) => {
+    if (!containerRef.current) return;
+    const width = containerRef.current.offsetWidth;
+    const pctDelta = (delta / width) * 100;
+    setSplitPercent((prev) => Math.max(20, Math.min(80, prev + pctDelta)));
+  }, []);
+
   // Keyboard shortcuts
   const handleKey = useCallback((e: KeyboardEvent) => {
     if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement) return;
@@ -67,6 +93,7 @@ export default function VisualizerPage({ problem }: Props) {
       case 'p': if (hasTranslation('python')) setLanguage('python'); break;
       case 'j': if (hasTranslation('javascript')) setLanguage('javascript'); break;
       case 'g': if (hasTranslation('go')) setLanguage('go'); break;
+      case 't': setShowTranscript((prev) => !prev); break;
       case '[': {
         const speeds = [0.5, 1, 1.5, 2, 3];
         const idx = speeds.indexOf(state.speed);
@@ -138,9 +165,9 @@ export default function VisualizerPage({ problem }: Props) {
       </div>
 
       {/* Main split view */}
-      <div className="flex-1 flex flex-col md:flex-row min-h-0">
+      <div ref={containerRef} className="flex-1 flex flex-col md:flex-row min-h-0">
         {/* Code Panel */}
-        <div className="md:w-1/2 w-full border-b md:border-b-0 md:border-r border-editor-border overflow-hidden">
+        <div className="w-full border-b md:border-b-0 overflow-hidden" style={{ flex: `0 0 ${splitPercent}%` }}>
           <CodePanel
             code={activeCode}
             activeLine={activeLine}
@@ -148,16 +175,27 @@ export default function VisualizerPage({ problem }: Props) {
           />
         </div>
 
-        {/* Viz Panel + Variables */}
-        <div className="md:w-1/2 w-full flex flex-col min-h-0">
-          <div className="flex-1 overflow-auto">
-            <VisualPanel viz={state.step.viz} />
-          </div>
-          {state.step.viz.variables && (
-            <VariablesPanel
-              variables={state.step.viz.variables}
-              prevVariables={prevStep?.viz.variables}
-            />
+        {/* Resize Handle */}
+        <div className="hidden md:block">
+          <ResizeHandle direction="horizontal" onResize={handleHorizontalResize} />
+        </div>
+
+        {/* Viz Panel + Variables / Transcript */}
+        <div className="flex-1 flex flex-col min-h-0 min-w-0">
+          {showTranscript && state.isAtEnd ? (
+            <TranscriptPanel steps={problem.steps} problemName={problem.name} />
+          ) : (
+            <>
+              <div className="flex-1 overflow-auto">
+                <VisualPanel viz={state.step.viz} />
+              </div>
+              {state.step.viz.variables && (
+                <VariablesPanel
+                  variables={state.step.viz.variables}
+                  prevVariables={prevStep?.viz.variables}
+                />
+              )}
+            </>
           )}
         </div>
       </div>
