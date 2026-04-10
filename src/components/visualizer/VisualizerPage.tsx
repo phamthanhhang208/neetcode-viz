@@ -15,6 +15,8 @@ import ComplexityPanel from './ComplexityPanel';
 import ResizeHandle from './ResizeHandle';
 import TranscriptPanel from './TranscriptPanel';
 import DifficultyBadge from '@/components/shared/DifficultyBadge';
+import FavoriteStar from '@/components/shared/FavoriteStar';
+import AddToListMenu from '@/components/lists/AddToListMenu';
 import { ExternalLink, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -154,6 +156,8 @@ export default function VisualizerPage({ problem }: Props) {
           <ChevronDown size={12} className="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none" />
         </div>
 
+        <FavoriteStar problemId={problem.id} />
+        <AddToListMenu problemId={problem.id} />
         <a
           href={problem.link}
           target="_blank"

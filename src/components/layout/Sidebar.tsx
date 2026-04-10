@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { getOrderedTopics } from '@/data/topics';
 import { getProblemsForTopicIndex } from '@/data/neetcode150';
 import { useProgress } from '@/hooks/useProgress';
-import { PanelLeftClose, PanelLeft, Layers, LogOut } from 'lucide-react';
+import { PanelLeftClose, PanelLeft, Layers, Bookmark, LogOut } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 
 interface SidebarProps {
@@ -97,6 +97,20 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
       >
         <Layers size={16} className="flex-shrink-0" />
         {!collapsed && <span>Flashcards</span>}
+      </NavLink>
+      <NavLink
+        to="/lists"
+        className={({ isActive }) =>
+          cn(
+            'flex items-center gap-3 px-3 py-2 mx-1 rounded text-sm transition-colors',
+            isActive
+              ? 'bg-editor-active text-text-bright'
+              : 'text-text-secondary hover:bg-editor-hover hover:text-text-primary',
+          )
+        }
+      >
+        <Bookmark size={16} className="flex-shrink-0" />
+        {!collapsed && <span>My Lists</span>}
       </NavLink>
 
       {/* User section */}

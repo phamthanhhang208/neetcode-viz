@@ -7,6 +7,8 @@ import LoginPage from '@/pages/LoginPage';
 import FlashcardsPage from '@/pages/FlashcardsPage';
 import StackPage from '@/pages/StackPage';
 import StudyPage from '@/pages/StudyPage';
+import ListsPage from '@/pages/ListsPage';
+import ListDetailPage from '@/pages/ListDetailPage';
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="/flashcards" element={<FlashcardsPage />} />
         <Route path="/flashcards/:stackId" element={<StackPage />} />
         <Route path="/flashcards/:stackId/study" element={<StudyPage />} />
+        <Route path="/lists" element={<ListsPage />} />
+        <Route path="/lists/:listId" element={<ListDetailPage />} />
       </Route>
     </Routes>
   );

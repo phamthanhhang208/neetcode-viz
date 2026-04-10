@@ -4,6 +4,7 @@ import { getOrderedTopics } from '@/data/topics';
 import { useProgress } from '@/hooks/useProgress';
 import { cn, difficultyColor } from '@/lib/utils';
 import StatusDot from '@/components/shared/StatusDot';
+import FavoriteStar from '@/components/shared/FavoriteStar';
 import type { TopicId } from '@/data/types';
 
 export default function RoadmapGrid() {
@@ -61,6 +62,7 @@ export default function RoadmapGrid() {
                       )}
                     >
                       <StatusDot status={status} onClick={(next) => setStatus(problem.id, next)} />
+                      <FavoriteStar problemId={problem.id} size={12} />
                       <span className={cn('truncate max-w-[140px]', difficultyColor(problem.difficulty))}>
                         {problem.number}. {problem.name}
                       </span>
