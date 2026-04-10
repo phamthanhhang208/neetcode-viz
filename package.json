@@ -1,7 +1,9 @@
 {
   "name": "neetcode-viz",
+  "description": "Interactive algorithm visualizer for the NeetCode 150 problem set with step-through animations, multi-language code, flashcards, and spaced repetition",
+  "keywords": ["neetcode", "algorithms", "data-structures", "visualizer", "leetcode", "react", "typescript", "flashcards", "spaced-repetition"],
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
