@@ -1,0 +1,48 @@
+front,back,stack
+"What is **Big O notation**?","Describes the upper bound of an algorithm's growth rate as input size increases. Common complexities: O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ)","Algorithms"
+"What is a **closure** in JavaScript?","A function that retains access to variables from its enclosing scope, even after the outer function has returned.
+
+```javascript
+function outer() {
+  let count = 0;
+  return function inner() {
+    return ++count;
+  };
+}
+```","Frontend"
+"Explain the **Virtual DOM**","A lightweight in-memory representation of the real DOM. React uses it to batch updates and minimize expensive DOM operations by diffing the virtual tree against the previous version.","Frontend"
+"What is **memoization**?","Caching the results of expensive function calls to avoid redundant computation. Used in dynamic programming (top-down approach).
+
+```python
+memo = {}
+def fib(n):
+    if n in memo: return memo[n]
+    if n <= 1: return n
+    memo[n] = fib(n-1) + fib(n-2)
+    return memo[n]
+```","Algorithms"
+"Difference between `==` and `===` in JavaScript?","- `==` (loose equality): converts types before comparing. `'5' == 5` is `true`
+- `===` (strict equality): no type conversion. `'5' === 5` is `false`
+
+Always prefer `===` to avoid unexpected coercion.","Frontend"
+"What is **event delegation**?","Instead of attaching event listeners to each child element, attach one listener to a parent. Events bubble up, so the parent catches them. More efficient for dynamic lists.","Frontend"
+"Time complexity of common **sorting** algorithms?","| Algorithm | Best | Average | Worst |
+|-----------|------|---------|-------|
+| Quick Sort | O(n log n) | O(n log n) | O(n²) |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) |
+| Heap Sort | O(n log n) | O(n log n) | O(n log n) |
+| Bubble Sort | O(n) | O(n²) | O(n²) |","Algorithms"
+"What is the **CSS Box Model**?","Every element is a box with: **content** → **padding** → **border** → **margin** (inside out). `box-sizing: border-box` makes width/height include padding and border.","Frontend"
+"Explain **Promise** vs **async/await**","Both handle asynchronous operations:
+- **Promise**: `.then()/.catch()` chaining
+- **async/await**: syntactic sugar over Promises, looks synchronous
+
+```javascript
+// Promise
+fetch(url).then(res => res.json()).then(data => console.log(data));
+
+// async/await
+const res = await fetch(url);
+const data = await res.json();
+```","Frontend"
+"What is a **hash map** and its time complexity?","Key-value store with O(1) average lookup, insert, and delete. Uses a hash function to map keys to array indices. Worst case O(n) with many collisions.","Algorithms"

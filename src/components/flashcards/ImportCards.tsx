@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import Papa from 'papaparse';
-import { X, Upload, FileText, Check } from 'lucide-react';
+import { X, Upload, FileText, Check, Download } from 'lucide-react';
 import { useFlashcards } from '@/hooks/useFlashcards';
 import { cn } from '@/lib/utils';
 
@@ -114,13 +114,23 @@ export default function ImportCards({ isOpen, onClose, defaultStackId }: Props) 
                 onChange={handleFile}
                 className="hidden"
               />
-              <button
-                onClick={() => fileRef.current?.click()}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded bg-editor-active border border-editor-border text-sm text-text-primary hover:border-accent-blue/50 transition-colors"
-              >
-                <FileText size={14} />
-                Choose CSV File
-              </button>
+              <div className="flex items-center gap-3 justify-center">
+                <button
+                  onClick={() => fileRef.current?.click()}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded bg-editor-active border border-editor-border text-sm text-text-primary hover:border-accent-blue/50 transition-colors"
+                >
+                  <FileText size={14} />
+                  Choose CSV File
+                </button>
+                <a
+                  href="/flashcard-template.csv"
+                  download="flashcard-template.csv"
+                  className="inline-flex items-center gap-1 text-xs text-accent-blue hover:underline"
+                >
+                  <Download size={12} />
+                  Download template
+                </a>
+              </div>
             </div>
           ) : (
             <div>
